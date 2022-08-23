@@ -1,0 +1,24 @@
+.container{
+  min-height: 100vh;
+  background-color: #eee;
+  margin: 30px;
+}
+.posts{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+.post{
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: transform 200ns ease-in-out;
+}
+.post:hover{
+  transform: scale(1.05);
+}
+.post img{
+  max-width: 100%;
+}
+.post-card{
+  padding: 30px;
+}
